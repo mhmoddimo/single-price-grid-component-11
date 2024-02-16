@@ -1,0 +1,115 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+body {
+    font-family: "Karla", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-Gray);
+}
+
+.card {
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+}
+.card .box-1 {
+    background-color: white;
+}
+.card .box-1 h1 {
+    color: var(--Cyan);
+    font-weight: 700;
+}
+.card .box-1 h2 {
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+}
+.card .box-1 p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--Grayish-Blue);
+}
+.card .holder {
+    display: flex;
+}
+.card .box-2 {
+    background-color: var(--Cyan);
+    flex: 50%;
+}
+.card .box-2 h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+.card .box-2  .price {
+    display: flex;
+    align-items: center;
+}
+.card .box-2  .price span:nth-child(1) {
+    font-size: 40px;
+    margin-right: 20px;
+    color: white;
+    font-weight: 700;
+}
+.card .box-2  .price span:nth-child(2) {
+    color: var(--Light-Gray);
+}
+.card .box-2  p {
+    color: white;
+}
+.card .box-2 button {
+    border: none;
+    padding: 15px ;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.card .box-3 h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.card .box-3 p {
+    color: var(--Light-Gray);
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 300;
+}
+.card .box-3 {
+    background-color: hsl(179, 47%, 52%);
+    flex: 50%;
+}
+@media (max-width: 780px) {
+    .card {
+        width: 350px;
+        margin: 50px 0;
+    }
+    .card .holder {
+        display: flex;
+        flex-direction: column;
+    }
+}
